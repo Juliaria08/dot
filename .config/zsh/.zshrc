@@ -82,3 +82,4 @@ source /usr/share/nvm/init-nvm.sh
 . /usr/share/fzf/key-bindings.zsh
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+alias ll='exa -lh --group-directories-first'

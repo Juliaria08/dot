@@ -125,7 +125,7 @@ font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = xwindow xkeyboard
+modules-left = xmenu xwindow xkeyboard
 modules-center = date
 modules-right = mpd battery
 
@@ -137,6 +137,16 @@ tray-padding = 2
 tray-maxsize = 20
 tray-scale = 1.0
 tray-background = ${colors.background}
+
+[module/xmenu]
+;https://github.com/polybar/polybar/wiki/Module:-text
+type = custom/text
+content = 
+click-left = 'xmenu.sh'
+click-middle = 'xmenu.sh'
+click-right = 'xmenu.sh'
+content-background = ${colors.background}
+content-foreground= ${colors.foreground}
 
 [module/battery]
 ;https://github.com/jaagr/polybar/wiki/Module:-battery

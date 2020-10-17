@@ -5,6 +5,7 @@
 # If you don't plan on reverting to bash, you can remove the link in ~/.profile
 # to clean up.
 
+alias ll='exa -lh --group-directories-first'
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
