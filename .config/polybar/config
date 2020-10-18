@@ -147,6 +147,7 @@ click-middle = 'xmenu.sh'
 click-right = 'xmenu.sh'
 content-background = ${colors.background}
 content-foreground= ${colors.foreground}
+content-underline = #21ff90
 
 [module/battery]
 ;https://github.com/jaagr/polybar/wiki/Module:-battery
@@ -203,6 +204,7 @@ format-prefix =
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
 format-background =
+format-underline = #21ff90
 label = "%date% %time% "
 
 [module/mpd]
