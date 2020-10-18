@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+yay -Sy
+feh --bg-fill --randomize ~/Pictures/*

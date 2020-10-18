@@ -27,10 +27,8 @@ Config / SysMonitors
 * Managers
 	Password Managers
 		Pass	passmenu
-		Keepass	keepassxc
 	File Managers
 		lf	st -e 'lf'
 		vifm	st -e 'vifm'
 		pcmanfm	pcmanfm
-	Wallpaper Manager	nitrogen
 EOF

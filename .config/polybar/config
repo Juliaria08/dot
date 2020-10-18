@@ -141,7 +141,7 @@ tray-background = ${colors.background}
 [module/xmenu]
 ;https://github.com/polybar/polybar/wiki/Module:-text
 type = custom/text
-content = 
+content = 
 click-left = 'xmenu.sh'
 click-middle = 'xmenu.sh'
 click-right = 'xmenu.sh'
