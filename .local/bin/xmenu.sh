@@ -6,7 +6,7 @@ Web Browser	brave
 Calendar	st -e 'calcurse'
 
 Productivity
-	Mail	st -e 'neomutt'
+	Mail $(mailbox)	st -e 'neomutt'
 	Sync Mail	mw -Y
 	Calendar	st -e 'calcurse'
 Entretaiment
