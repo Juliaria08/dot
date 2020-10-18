@@ -8,7 +8,7 @@ stty stop undef		# Disable ctrl-s to freeze terminal.
 
 # History in cache directory:
 HISTSIZE=10000
-SAVEHIST=10000
+SAVEHIST=1000000000000
 HISTFILE=~/.cache/zsh/history
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 # Load aliases and shortcuts if existent.
