@@ -10,6 +10,7 @@ Productivity
 	Sync Mail	mw -Y
 	Calendar	st -e 'calcurse'
 Entretaiment
+	MpvClip	mpvclip
 	Youtube	st -e 'youtube-viewer'
 	Image editor	gimp
 	Char Map	gucharmap
