@@ -127,7 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = xmenu xwindow xkeyboard
 modules-center = date
-modules-right = mpd battery
+modules-right = mail mpd battery
 
 tray-detached = false
 tray-offset-x = 0
@@ -137,6 +137,19 @@ tray-padding = 2
 tray-maxsize = 20
 tray-scale = 1.0
 tray-background = ${colors.background}
+
+[module/mail]
+;https://github.com/polybar/polybar/wiki/Module:-script
+type = custom/script
+exec = pbmail
+interval=180
+label-padding = 1
+format-prefix =" "
+click-left = st -e 'neomutt' &
+click-right = st -e 'neomutt' &
+format-background = ${colors.background}
+format-foreground= ${colors.foreground}
+format-underline = #21ff90
 
 [module/xmenu]
 ;https://github.com/polybar/polybar/wiki/Module:-text
