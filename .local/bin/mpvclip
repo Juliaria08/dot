@@ -1,2 +1,3 @@
 #!/bin/sh
+notify-send "MpvClip" "Loanding $(xclip -out -selection primary)"
 xclip -out -selection primary | xargs mpv
