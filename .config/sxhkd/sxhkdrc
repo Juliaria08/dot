@@ -171,8 +171,8 @@ super + space
 #
 
 # set the window state
-#super + {t,shift + t,s}
-#bspc node -t {tiled,pseudo_tiled,floating}
+super + t
+bspc node -t tiled
 
 super + shift + space
 	bspc node focused -t \~floating
