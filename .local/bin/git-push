@@ -1,0 +1,3 @@
+ssh-add
+git remote | xargs -L1 -I R git push R master
+ssh-add -D
