@@ -35,6 +35,7 @@ bspc rule -a St:$dropdownname state=floating
 bspc rule -a Zathura state=tiled
 bspc rule -a Screenkey manage=off
 
+
 # - Colors -
 bspc config normal_border_color	"#4c566a"
 bspc config active_border_color	"#1e1e1e"
