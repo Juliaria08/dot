@@ -1,0 +1,19 @@
+#!/bin/sh
+tmux new -d -s "art"
+tmux split-window -h -t "art"
+tmux split-window -v -t "art"
+tmux renamew -t art:0 "Home"
+
+# Make windows
+tmux neww -n "Secondary" -t art:1
+# Whe dont need newsboat
+# tmux neww -n "Rss" -t art:2 newsboat
+# Whe dont need documents
+# tmux neww -n "Doc" -t art:3 -c ~/Documents/
+
+# Go to window 0
+tmux selectw -t art:0
+tmux selectp -t art:0.0
+
+# Send notification
+notify-send "Art" "Tmux session has been made" 2>/dev/null
