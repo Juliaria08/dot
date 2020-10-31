@@ -129,7 +129,7 @@ font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = xmenu bspwm xwindow xkeyboard
+modules-left = xmenu bspwm xwindow network wireless xkeyboard
 modules-center = date
 modules-right = mail battery
 
@@ -195,6 +195,60 @@ label-private-foreground = ${colors.foreground}
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+[module/network]
+;https://github.com/polybar/polybar/wiki/Module:-network
+type = internal/network
+interface = enp59s0f1
+interval = 3.0
+
+; All labels support the following tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+
+; Default: %ifname% %local_ip%
+label-connected = %local_ip% 
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
+label-connected-underline = #b0acfc
+
+; When not conected
+; Default: (none)
+label-disconnected =
+label-disconnected-foreground = ${colors.foreground}
+
+[module/wireless]
+;https://github.com/polybar/polybar/wiki/Module:-network
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+
+; All labels support the following tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+
+; Default: %ifname% %local_ip%
+label-connected = " %local_ip%  "
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
+label-connected-underline = #b0acfc
+
+; When not conected
+; Default: (none)
+label-disconnected =
+label-disconnected-foreground = ${colors.foreground}
 
 [module/mail]
 ;https://github.com/polybar/polybar/wiki/Module:-script
