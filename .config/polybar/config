@@ -150,7 +150,7 @@ enable-scroll = true
 reverse-scroll = false
 pin-workspaces = true
 
-ws-icon-default = " "
+ws-icon-default = ""
 
 format = <label-state> <label-mode>
 
@@ -212,7 +212,7 @@ format-underline = #21ff90
 [module/xmenu]
 ;https://github.com/polybar/polybar/wiki/Module:-text
 type = custom/text
-content = 
+content = 
 click-left = 'xmenu.sh'
 click-middle = 'xmenu.sh'
 click-right = 'xmenu.sh'
