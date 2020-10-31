@@ -213,7 +213,7 @@ interval = 3.0
 ;   %linkspeed% [wired]
 
 ; Default: %ifname% %local_ip%
-label-connected = %local_ip% 
+label-connected =  %local_ip% 
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.background}
 label-connected-underline = #b0acfc
@@ -240,7 +240,7 @@ interval = 3.0
 ;   %linkspeed% [wired]
 
 ; Default: %ifname% %local_ip%
-label-connected = " %local_ip%  "
+label-connected = " %local_ip%"
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.background}
 label-connected-underline = #b0acfc
