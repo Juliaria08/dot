@@ -5,3 +5,5 @@
 Nvim configs are located in .config/nvim
 ## Emacs configs
 I use doom emacs and the configs are located in .doom.d
+## Graph
+Install gource and run ```gource``` on this repository folder
