@@ -7,6 +7,10 @@
 # Add this when you include flatpak in your system
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+# Power Saving Stuff on
+xset dpms &
+xset s on &
+
 mpd &			# music player daemon-you might prefer it as a service though
 remaps &		# run the remaps script, switching caps/esc and more; check it for more infox
 setbg &			# set the background with the `setbg` script
