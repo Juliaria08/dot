@@ -44,10 +44,8 @@ super + Scroll_Lock
 	killall screenkey || screenkey
 super + Insert
 	showclip
-super + shift + BackSpace
-	sysact
 super + x
-	ifinstalled slock && ( slock & xset dpms force off ; mpc pause ; pauseallmpv )
+	ifinstalled slock && ( slimlock & xset dpms force off ; mpc pause ; pauseallmpv )
 XF86Launch1
 	xset dpms force off
 XF86TouchpadToggle
@@ -102,8 +100,6 @@ XF86AudioRecord
 XF86AudioMedia
 	$TERMINAL -e ncmpcpp
 
-XF86PowerOff
-	sysact
 XF86Calculator
 	$TERMINAL -e bc
 XF86Sleep

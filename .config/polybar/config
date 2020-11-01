@@ -131,7 +131,7 @@ font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = xmenu bspwm xwindow network wireless xkeyboard
 modules-center = date
-modules-right = mail battery
+modules-right = pup mail battery
 
 tray-detached = false
 tray-offset-x = 0
@@ -213,7 +213,7 @@ interval = 3.0
 ;   %linkspeed% [wired]
 
 ; Default: %ifname% %local_ip%
-label-connected =  %local_ip% 
+label-connected =  %local_ip%
 label-connected-foreground = ${colors.foreground}
 label-connected-background = ${colors.background}
 label-connected-underline = #b0acfc
@@ -249,6 +249,16 @@ label-connected-underline = #b0acfc
 ; Default: (none)
 label-disconnected =
 label-disconnected-foreground = ${colors.foreground}
+
+[module/pup]
+;https://github.com/polybar/polybar/wiki/Module:-script
+type = custom/script
+exec = pacup
+interval = 90
+label =  %output%
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+label-underline = #9ffff0
 
 [module/mail]
 ;https://github.com/polybar/polybar/wiki/Module:-script
