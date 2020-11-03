@@ -17,7 +17,7 @@ super + d
 super + shift + Return
 	em
 super + r
-	$TERMINAL -e $FILE
+	$TERMINAL -e calcurse
 super + e
 	$TERMINAL -e neomutt; pkill -RTMIN+12 blocks
 super + m
@@ -31,7 +31,7 @@ super + n
 super + shift + F4
 	$TERMINAL -e pulsemixer
 super + shift + e
-	tutorialvids
+	$TERMINAL -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook
 super + w
 	$BROWSER
 super + shift + w
