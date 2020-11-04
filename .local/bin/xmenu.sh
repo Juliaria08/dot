@@ -31,5 +31,5 @@ Config / SysMonitors
 	File Managers
 		lf	st -e 'lf'
 		vifm	st -e 'vifm'
-		pcmanfm	pcmanfm
+		Nemo	nemo
 EOF
