@@ -167,7 +167,7 @@ label-occupied-background = ${colors.background}
 label-urgent = %icon%
 label-urgent-padding = 2
 
-label-empty =
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground}
 label-empty-padding = 2
 label-empty-background = ${colors.background}
