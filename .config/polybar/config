@@ -131,7 +131,7 @@ font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = xmenu bspwm xwindow network wireless xkeyboard
 modules-center = date
-modules-right = pup mail battery
+modules-right = news pup mail battery
 
 tray-detached = false
 tray-offset-x = 0
@@ -249,6 +249,17 @@ label-connected-underline = #b0acfc
 ; Default: (none)
 label-disconnected =
 label-disconnected-foreground = ${colors.foreground}
+
+
+[module/news]
+;https://github.com/polybar/polybar/wiki/Module:-script
+type = custom/script
+exec = news
+interval = 120
+label =  %output%
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+label-underline = #0ffff0
 
 [module/pup]
 ;https://github.com/polybar/polybar/wiki/Module:-script
