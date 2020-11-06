@@ -1,0 +1,2 @@
+notify-send "MpvWindow" "Loanding $@"
+mpv --autofit=30% "$@"
