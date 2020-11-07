@@ -19,7 +19,7 @@ super + shift + Return
 super + r
 	$TERMINAL -e calcurse
 super + e
-	$TERMINAL -e neomutt; pkill -RTMIN+12 blocks
+	$TERMINAL -e neomutt
 super + m
 	$TERMINAL -e ncmpcpp
 super + shift + n
