@@ -271,6 +271,9 @@ label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 label-underline = #9ffff0
 format-prefix = " "
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-underline = #9ffff0
 
 [module/mail]
 ;https://github.com/polybar/polybar/wiki/Module:-script
