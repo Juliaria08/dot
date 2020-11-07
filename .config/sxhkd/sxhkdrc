@@ -45,7 +45,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + x
-	ifinstalled slock && ( slimlock & xset dpms force off ; mpc pause ; pauseallmpv )
+	slimlock & xset dpms force off ; mpc pause ; pauseallmpv
 XF86Launch1
 	xset dpms force off
 XF86TouchpadToggle
@@ -188,8 +188,11 @@ super + {_,shift + }c
 # focus the older or newer node in the focus history
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} {1-9,10}
+super + {_,shift + } {1-9}
+	bspc {desktop -f,node -d} ^{1-9}
+
+super + {_,shift + } 0
+	bspc {desktop -f,node -d} R00t
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
