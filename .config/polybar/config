@@ -266,10 +266,11 @@ label-underline = #0ffff0
 type = custom/script
 exec = pacup
 interval = 90
-label = ﮮ %output%
+label = %output%
 label-foreground = ${colors.foreground}
 label-background = ${colors.background}
 label-underline = #9ffff0
+format-prefix = " "
 
 [module/mail]
 ;https://github.com/polybar/polybar/wiki/Module:-script
