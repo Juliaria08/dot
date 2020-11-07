@@ -8,6 +8,7 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
+Plug 'junegunn/limelight.vim'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
 Plug 'junegunn/goyo.vim'
@@ -21,6 +22,12 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'ap/vim-css-color'
 call plug#end()
 
+" Color
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#777777'
+" End of Color
 set bg=light
 set go=a
 set mouse=a
