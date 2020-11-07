@@ -16,6 +16,12 @@ set number relativenumber
 " Replace ex mode with gq
 map Q gq
 
+" Compile document
+map <leader>c :w! \| !compiler <c-r>%<CR>
+
+" Open corresponding document
+map <leader>p :!opout <c-r>%<CR><CR>
+
 " Check file in shellcheck:
 map <leader>s :!clear && shellcheck %<CR>
 
@@ -39,7 +45,7 @@ set path+=**
 let g:is_bash=1
 
 " Color scheme
-color default
+color desert
 
 " Search
 set ignorecase smartcase
