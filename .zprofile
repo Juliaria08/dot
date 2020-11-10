@@ -8,7 +8,7 @@
 alias ll='exa -lh --group-directories-first'
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
+export PATH="/home/julian/Documents/config/bin:$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
 
 # Default programs:
 export EDITOR="nvim"
