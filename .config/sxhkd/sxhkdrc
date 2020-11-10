@@ -12,7 +12,7 @@ super + Return
 	$TERMINAL
 super + ctrl + Return
 	xmenu.sh
-super + l
+super + shift + x
 	launcher
 super + d
 	dmenu_run
