@@ -69,3 +69,9 @@
 (setq calendar-week-start-day 1)
 
 (load "~/.doom.d/lisp/org-notmuch.el")
+
+;; A good introduction https://tecosaur.github.io/emacs-config/config.html.
+
+(setq-default custom-file (expand-file-name ".custom.el" doom-private-dir))
+(when (file-exists-p custom-file)
+  (load custom-file))
