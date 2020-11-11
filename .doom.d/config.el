@@ -68,6 +68,7 @@
 ;; Monday is the first day of the week
 (setq calendar-week-start-day 1)
 
+;; Notmuch config.
 (load "~/.doom.d/lisp/org-notmuch.el")
 
 ;; A good introduction https://tecosaur.github.io/emacs-config/config.html.
