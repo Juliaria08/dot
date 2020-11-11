@@ -99,10 +99,6 @@
 (package! org-pretty-tags :pin "40fd72f3e7...")
 
 
-;; Doom dasboard
-(setq doom-fallback-buffer-name "► Doom"
-      +doom-dashboard-name "► Doom")
-
 ;; Custom logo
 (defvar fancy-splash-image-template
   (expand-file-name "misc/splash-images/blackhole-lines-template.svg" doom-private-dir)
