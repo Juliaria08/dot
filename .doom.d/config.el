@@ -67,3 +67,5 @@
 
 ;; Monday is the first day of the week
 (setq calendar-week-start-day 1)
+
+(load "~/.doom.d/lisp/org-notmuch.el")
