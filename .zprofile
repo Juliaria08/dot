@@ -42,8 +42,6 @@ export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/ansible/ansible.cfg"
 export UNISON="${XDG_DATA_HOME:-$HOME/.local/share}/unison"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
-export NOTMUCH_CONFIG="$XDG_CONFIG_HOME"/notmuch/notmuchrc
-export NMBGIT="$XDG_DATA_HOME"/notmuch/nmbug
 
 # Other program settings:
 export DICS="/usr/share/stardict/dic/"
