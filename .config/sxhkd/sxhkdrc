@@ -12,8 +12,6 @@ super + Return
 	$TERMINAL
 super + ctrl + Return
 	xmenu.sh
-super + control + x
-	gnome-screensaver-command -l
 super + shift + x
 	launcher
 super + d
