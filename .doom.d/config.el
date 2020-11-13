@@ -68,6 +68,11 @@
 ;; Monday is the first day of the week
 (setq calendar-week-start-day 1)
 
+;; Broswer
+(setq
+ browse-url-browser-function 'browse-url-generic
+ browse-url-generic-program "brave")
+
 ;; Notmuch config.
 (load "~/.doom.d/lisp/org-notmuch.el")
 
