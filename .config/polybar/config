@@ -142,6 +142,109 @@ tray-maxsize = 20
 tray-scale = 1.0
 tray-background = ${colors.background}
 
+; Simple bar
+
+[bar/simple]
+monitor = ${env:MONITOR:eDP-1}
+;monitor = default
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+bottom = false
+separator =
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+scroll-up = bspwm-desknext
+scroll-down = bspwn-deskprev
+wm-restack = bspwm
+override-redirect = true
+
+; Enable support for inter-process messaging
+; See the Messaging wiki page for more details.
+enable-ipc = true
+
+border-size = 0
+;border-left-size = 0
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = #00000000
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 0
+module-margin-right = 0
+
+;https://github.com/jaagr/polybar/wiki/Fonts
+font-0 = "UbuntuMono Nerd Font:size=10;2"
+font-1 = "UbuntuMono Nerd Font:size=16;3"
+font-2 = "SpaceMono Nerd Font:pixelsize=8;1"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
+
+modules-left = bspwm-simple
+modules-center =
+modules-right = date
+
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 0
+tray-position = right
+tray-padding = 2
+tray-maxsize = 20
+tray-scale = 1.0
+tray-background = ${colors.background}
+
+
+[module/bspwm-simple]
+type = internal/bspwm
+
+enable-click = true
+enable-scroll = true
+reverse-scroll = false
+pin-workspaces = true
+
+ws-icon-default = ""
+
+format = <label-state> <label-mode>
+
+label-focused = %name%
+label-focused-background = ${colors.background}
+label-focused-underline = #6790eb
+label-focused-padding = 2
+label-focused-foreground = ${colors.foreground}
+
+label-occupied = %name%
+label-occupied-padding = 2
+label-occupied-background = ${colors.background}
+label-occupied-underline = #f790eb
+
+label-urgent = %name%
+label-urgent-padding = 2
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 2
+label-empty-background = ${colors.background}
+
+; Separator in between workspaces
+;label-separator = |
+;label-separator-padding = 10
+;label-separator-foreground = #ffb52a
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
 [module/bspwm]
 type = internal/bspwm
 
