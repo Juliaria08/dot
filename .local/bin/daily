@@ -2,3 +2,4 @@
 
 yay -Sy
 randomwp
+CALCURSE_CALDAV_PASSWORD=$(pass show caldav-julianjar08@gmail.com) calcurse-caldav
