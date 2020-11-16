@@ -39,6 +39,7 @@ super + w
 super + shift + w
 	$TERMINAL -e sudo nmtui
 
+
 # Et cetera...
 super + grave
 	dmenuunicode
@@ -259,3 +260,6 @@ super + ctrl + alt + {h,j,k,l}
   , d1=right;  d2=left;   dx=$n;  dy=0;   \
   } \
   bspc node --resize $d1 $dx $dy || bspc node --resize $d2 $dx $dy
+
+super + shift + Tab
+	rofi -show window
