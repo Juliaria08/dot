@@ -65,11 +65,16 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
+
+cd_with_fzf() {
+	cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && echo "$PWD" && tree -L 1
+}
+
 bindkey -s '^o' 'lfcd\n'
 
 bindkey -s '^a' 'bc -l\n'
 
-bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
+bindkey -s '^f' 'cd_with_fzf\n'
 alias em="emacsclient -t -a ''"
 
 bindkey '^[[P' delete-char

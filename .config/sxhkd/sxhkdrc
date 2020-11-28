@@ -36,6 +36,8 @@ super + shift + e
 	$TERMINAL -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook
 super + w
 	$BROWSER
+super + alt + w
+	/home/julian/Documents/apps/ugc.AppImage
 super + shift + w
 	$TERMINAL -e sudo nmtui
 
