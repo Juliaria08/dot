@@ -11,6 +11,7 @@ I have vim,  nvim and (*doom*) emacs editor configs.
 <hr />
 <details>
 <summary>Configs</summary>
+
 <details>
 <summary><h3>Nvim</h3></summary>
 Nvim configs are located in .config/nvim
@@ -25,3 +26,4 @@ I use doom emacs and the configs are located in .doom.d
 <summary> <h3>Graph</h3> </summary>
 Install gource and run ```gource``` on this repository folder
 </details>
+<hr />
