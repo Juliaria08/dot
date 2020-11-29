@@ -22,9 +22,11 @@ Nvim configs are located in .config/nvim
 <summary>Emacs ( Doom )</summary>
 I use doom emacs and the configs are located in .doom.d
 </details>
-<details>
 
+<details>
 <summary>Graph</summary>
 Install gource and run ```gource``` on this repository folder
+</details>
+
 </details>
 <hr />
