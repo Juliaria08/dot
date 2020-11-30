@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/julian/.local/share/icons/candy-icons/apps/scalable/ktorrent.svg
+Name=Torrent
+Exec=/usr/bin/env transadd %U

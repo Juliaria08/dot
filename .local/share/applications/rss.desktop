@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/julian/.local/share/icons/candy-icons/apps/scalable/rss_indicator.svg
+Name=RSS feed addition
+Exec=/usr/bin/env rssadd %U

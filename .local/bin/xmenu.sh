@@ -23,6 +23,7 @@ Entretaiment
 		Toogle screenkey	killall screenkey || screenkey &
 	Music
 		Ncmpcpp	st -e 'ncmpcpp'
+		Spotify	LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
 Config / SysMonitors
 	PulseMixer	st -e 'pulsemixer'
 	Htop	st -e 'htop'

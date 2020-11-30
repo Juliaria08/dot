@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Icon=/home/julian/.local/share/icons/candy-icons/apps/scalable/mail-client.svg
+Name=Mail
+Exec=/usr/local/bin/st -e neomutt %u
