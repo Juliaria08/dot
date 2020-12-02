@@ -265,3 +265,7 @@ super + ctrl + alt + {h,j,k,l}
 
 super + shift + Tab
 	rofi -show window
+
+# Add focused window to a tabbed instance in given direction
+super + t; {h,j,k,l}
+	tabc add {west,south,north,east} "$(bspc query -N -n focused)"
