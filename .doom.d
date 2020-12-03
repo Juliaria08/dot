@@ -1,0 +1,1 @@
+/home/julian/git/emacs/.doom.d
