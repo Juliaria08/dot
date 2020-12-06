@@ -456,7 +456,7 @@ time-alt = %l:%M %p
 format-prefix =
 format-prefix-foreground = #fefefe
 format-foreground = #fefefe
-format-background =
+format-background = ${colors.background}
 format-underline = #21ff90
 label = "%date% %time% "
 
