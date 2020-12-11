@@ -1,0 +1,1 @@
+git --git-dir=$HOME/.dots.git/ --work-tree=$HOME remote | xargs -L1 -I R git --git-dir=$HOME/.dots.git/ --work-tree=$HOME push R master

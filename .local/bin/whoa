@@ -1,0 +1,75 @@
+#!/bin/bash
+# Output a sorted list of currently logged-in users, tfurrows@sdf.org
+# Completely and utterly free, do whatever you want with this.
+
+#defaults
+c0="\e[0m"      # color reset
+c1="\e[32m"     # title and total color
+c2="\e[36m"     # color of [letter]
+c3="\e[33m"     # color of user count per letter
+c4="\e[35m"     # color of known users (from ~/.whoiknow)
+
+# Process arguments
+while getopts "hc" opt; do
+        case $opt in
+                h)
+                        printf "Usage: whoa [-ch]\n"
+                        printf "   -c removes all color, -h shows this message. \n"
+                        printf "   Place a text file named .whoiknow in your root, one login name per line, to highlight known users in the output.\n"
+                        exit
+                        ;;
+                c)
+                        # color off
+                        c0=""
+                        c1=""
+                        c2=""
+                        c3=""
+                        c4="*"
+                        ;;
+                \?)
+ printf "Usage: whoa [-ch]\n"
+                        printf "   -c removes all color, -h shows this message. \n"
+                        printf "   Place a text file named .whoiknow in your root, one login name per line, to hi
+ghlight known users in the output.\n"
+                        exit;
+                ;;
+        esac
+done
+
+# check for .whoiknow text file, read known usernames into array
+declare knownUsers
+if [ -f ~/.whoiknow ]; then
+        mapfile -t knownUsers < ~/.whoiknow
+fi
+
+# Get and sort user list
+USERS="$(/usr/bin/who -q | sed -e '$d')"
+array=(${USERS// / })
+readarray -t sorted < <(for a in "${array[@]}"; do echo "$a"; done | sort -u)
+
+# store in associative array
+declare -A alphaUsers
+for i in "${!sorted[@]}"
+do
+        if [[ " ${knownUsers[@]} " =~ " ${sorted[i]} " ]]; then
+                alphaUsers["${sorted[i]:0:1}"]+="${c4}"${sorted[i]}"${c0}, "
+        else
+                alphaUsers["${sorted[i]:0:1}"]+=${sorted[i]}", "
+        fi
+done
+
+printf "\n     ${c1}Alphabetical User List (logged in)${c0}\n"
+for x in {a..z}
+do
+        if [[ ! -z ${alphaUsers[$x]} ]]; then
+                countTemp="${alphaUsers[$x]//[^ ]}"
+                total="$(($total+${#countTemp}))"
+                countTemp=$(printf "%03d" ${#countTemp})
+
+                printf "\n     [${c2}${x^}${c0}] [${c3}$countTemp${c0}] "
+                printf "${alphaUsers[$x]::-2}" #strip the last comma/space off
+        fi
+done
+
+printf "\n\n     ${c1}$total users total${c0}"
+printf "\n\n"
