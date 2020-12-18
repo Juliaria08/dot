@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo -A su - user
+sudo -A -u user -i
