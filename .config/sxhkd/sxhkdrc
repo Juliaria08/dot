@@ -19,7 +19,7 @@ super + d
 super + shift + Return
 	em
 super + r
-	$TERMINAL -e calcurse
+	$TERMINAL -e 'lf'
 super + e
 	$TERMINAL -e neomutt
 super + m
