@@ -1,1 +1,1 @@
-/home/julian/git/emacs/.doom.d
+/home/julian/git/personal/projs/emacs/.doom.d/

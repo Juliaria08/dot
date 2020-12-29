@@ -1,1 +1,1 @@
-/home/julian/git/emacs/.emacs.d
+/home/julian/git/personal/projs/emacs/.emacs.d/
