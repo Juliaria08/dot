@@ -89,5 +89,6 @@ export NVM_DIR="$HOME/.local/share/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 . /usr/share/fzf/key-bindings.zsh
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
