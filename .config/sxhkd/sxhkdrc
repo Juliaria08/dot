@@ -15,7 +15,7 @@ super + ctrl + Return
 super + shift + x
 	launcher
 super + d
-	dmenu_run
+	rofi -show drun
 super + shift + Return
 	em
 super + r
