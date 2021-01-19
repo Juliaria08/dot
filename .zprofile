@@ -15,6 +15,7 @@ export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="brave"
 export READER="zathura"
+export TERM="xterm-256color"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
