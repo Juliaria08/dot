@@ -7,4 +7,5 @@ export FZF_DEFAULT_OPTS='
 --preview="awk -v HOST={} -f ~/.ssh/bin/host2conf.awk ~/.ssh/config"'
 
 host=$(grep '^[[:space:]]*Host[[:space:]]' ~/.ssh/config | cut -d ' ' -f 2 | fzf)
-[ $? -eq 0 ] && ssh $@ "$host"
+[ $? -eq 0 ]
+TERM=xterm-256color ssh $@ "$host"
