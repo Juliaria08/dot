@@ -1,0 +1,4 @@
+configuration {
+	modi: "window,run,ssh,drun";
+}
+@import "/usr/share/rofi/themes/purple.rasi"
