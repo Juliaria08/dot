@@ -8,4 +8,7 @@ export FZF_DEFAULT_OPTS='
 
 host=$(grep '^[[:space:]]*Host[[:space:]]' ~/.ssh/config | cut -d ' ' -f 2 | fzf)
 [ $? -eq 0 ]
+
+notify-send "😎 SSH 😎" "<b>Connected</b> to $@ $host"
+
 TERM=xterm-256color ssh $@ "$host"
