@@ -15,7 +15,7 @@ super + ctrl + Return
 super + shift + x
 	launcher
 super + d
-	rofi -show drun
+	rofi -show drun -show-icons
 super + shift + Return
 	em
 super + r
