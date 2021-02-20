@@ -1,2 +1,5 @@
 #!/bin/sh
 xclip -selection clipboard < /dev/null
+xclip -selection primary < /dev/null
+xclip -selection secondary < /dev/null
+xclip -selection buffer-cut < /dev/null
