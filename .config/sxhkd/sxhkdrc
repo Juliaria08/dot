@@ -50,7 +50,7 @@ super + Scroll_Lock
 super + Insert
 	showclip
 super + x
-	slimlock & xset dpms force off ; mpc pause ; pauseallmpv
+	lock & xset dpms force off ; mpc pause ; pauseallmpv
 XF86Launch1
 	xset dpms force off
 XF86TouchpadToggle
