@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# File where whe do the processing
+export FILE=/tmp/screen.png
+
+# Take screenshoot
+maim $FILE
+
+# Do a bit of magick with ImageMagick
+convert $FILE -paint 1 -swirl 360 ~/.local/share/logo.png -gravity center -composite -matte $FILE
+
+# Lock it up!
+i3lock -e -f -c 000000 -i /tmp/screen.png
