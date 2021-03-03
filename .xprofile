@@ -22,6 +22,7 @@ unclutter &		# Remove mouse when idle
 syncthing & # Launch syncthing
 # lang es & # Set language to es
 launch_polybar &
+keynav &
 
 # This line autostarts an instance of Pulseaudio that does not exit on idle.
 # This is "necessary" on Artix due to a current bug between PA and
