@@ -6,8 +6,14 @@ export FILE=/tmp/screen.png
 # Take screenshoot
 maim $FILE
 
+# TMPLOCK
+i3lock -e -f -c 454545
+
 # Do a bit of magick with ImageMagick
 convert $FILE -paint 1 -swirl 360 ~/.local/share/logo.png -gravity center -composite -matte $FILE
+
+# Stop tmp lock
+killall i3lock
 
 # Lock it up!
 i3lock -e -f -c 000000 -i /tmp/screen.png
