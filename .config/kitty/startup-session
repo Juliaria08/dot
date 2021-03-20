@@ -1,0 +1,16 @@
+launch zsh
+focus
+new_tab
+title ctrl-c
+launch zsh -i -c 'mosh ctrl-c.club; clear; zsh'
+title ~team
+launch zsh -i -c 'mosh tilde.team; clear; zsh'
+new_tab
+title neomutt
+launch zsh -i -c 'torsocks neomutt; clear; zsh'
+new_tab
+title amfora
+launch zsh -i -c 'torsocks amfora; clear; zsh'
+new_tab
+title weechat
+launch zsh -i -c 'weechat; clear; zsh'
