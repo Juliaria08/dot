@@ -1,0 +1,144 @@
+* {
+  border-color: #72898f !important;
+}
+a {
+  color: #4695f7 !important;
+}
+a:visited {
+  color: #af88eb !important;
+}
+body {
+  background-color: #103c48 !important;
+  color: #adbcbc !important;
+}
+html {
+  background-color: #103c48 !important;
+}
+input,
+textarea {
+  background-color: #184956 !important;
+  color: #adbcbc !important;
+}
+blockquote,
+pre {
+  background-color: #184956 !important;
+  color: #adbcbc !important;
+}
+body * {
+  border-color: #1b5463 !important;
+}
+#content {
+  background-color: #103c48 !important;
+  color: #adbcbc !important;
+}
+#mw-head,
+#mw-panel {
+  background-color: #184956 !important;
+  color: #cad8d9 !important;
+}
+#mw-head div.portal,
+#mw-panel div.portal {
+  background-image: none !important;
+}
+#mw-head {
+  background-color: #184956 !important;
+  background-image: linear-gradient(to bottom, #103c48, #184956) !important;
+}
+#mw-panel,
+#p-logo {
+  background-image: linear-gradient(to right, #103c48, #184956) !important;
+}
+div.vectorTabs {
+  background-image: linear-gradient(to bottom, #103c48, #184956) !important;
+}
+div.vectorTabs ul {
+  background-image: linear-gradient(to bottom, #103c48, #184956) !important;
+}
+div.vectorTabs ul li {
+  background-color: #184956 !important;
+  background-image: none !important;
+  padding: 0px 1px 0px 1px !important;
+}
+div.vectorTabs span {
+  background-color: #184956 !important;
+  background-image: linear-gradient(to bottom, #103c48, #184956) !important;
+}
+div.vectorTabs li.selected,
+div.vectorTabs li.selected span {
+  background-color: transparent !important;
+  background-image: linear-gradient(to bottom, #184956, #103c48) !important;
+}
+.mw-wiki-logo {
+  filter: opacity(50%);
+}
+div#simpleSearch #searchInput {
+  background-color: #103c48 !important;
+  padding: 0.05em 0px 0.2em 0.2em !important;
+}
+.ambox,
+.infobox,
+#toc,
+#toctitle,
+.toclevel-1 {
+  background-color: #184956 !important;
+  border-color: #1b5463 !important;
+  color: #cad8d9 !important;
+}
+.catlinks {
+  background-color: #184956 !important;
+  border-color: #1b5463 !important;
+  color: #cad8d9 !important;
+}
+.navbox {
+  background-color: #184956 !important;
+  border-color: #1b5463 !important;
+  color: #cad8d9 !important;
+}
+.navbox .th,
+.navbox .navbox-title {
+  background-color: #1b5463 !important;
+}
+.navbox-abovebelow,
+th.navbox-group,
+.navbox-subgroup,
+.navbox-title {
+  background-color: #1a4e5c !important;
+}
+.navbox-even {
+  background-color: #103c48 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-color: #1b5463 !important;
+  color: #cad8d9 !important;
+}
+code {
+  background-color: #1b5463 !important;
+  border-color: #1b5463 !important;
+  color: #cad8d9 !important;
+}
+div.thumbinner {
+  background-color: #184956 !important;
+  border-color: #1b5463 !important;
+}
+img {
+  filter: opacity(75%);
+}
+img.thumbimage {
+  border-color: #1b5463 !important;
+}
+.mw-body .external {
+  opacity: 0.5 !important;
+}
+table.wikitable {
+  background-color: #103c48 !important;
+  border-color: #1b5463 !important;
+  color: #adbcbc !important;
+}
+table.wikitable > * > tr > th {
+  background-color: #184956 !important;
+}

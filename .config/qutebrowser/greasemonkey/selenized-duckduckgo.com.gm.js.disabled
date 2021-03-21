@@ -1,0 +1,27 @@
+// ==UserScript==
+// @name            Selenized for duckduckgo.com
+// @author          lovetocode999
+// @namespace       https://lovetocode999.github.io/
+// @description     Selenized for duckduckgo.com
+// @license         MIT License
+// @version	        0.1
+// @include         /^https?:\/\/.*duckduckgo\.com\/.*/
+// @released        YYYY-MM-DD
+// @updated         YYYY-MM-DD
+// @compatible      Greasemonkey
+// @run-at          document-end
+// ==/UserScript==
+ 
+(function(){
+ 
+    function main(){
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.appendChild(document.createTextNode("*{border-color:#72898f!important}a{color:#4695f7!important}a:visited{color:#af88eb!important}body{background-color:#103c48!important;color:#adbcbc!important}html{background-color:#103c48!important}input,textarea{background-color:#184956!important;color:#adbcbc!important}blockquote,pre{background-color:#184956!important;color:#adbcbc!important}.search--adv{background-color:#184956!important}.search__autocomplete>.acp-wrap{background-color:#103c48!important}.search__autocomplete>.acp-wrap>.acp--highlight{background-color:#184956!important;color:#ccdadb!important}.search__autocomplete>.acp-wrap strong{color:#ccdadb!important}.site-wrapper>#header_wrapper{background-color:#103c48!important}.site-wrapper>#header_wrapper>#header{background-color:#103c48!important}.search--header{background-color:#184956!important}.zci{background-color:#184956!important;color:#adbcbc!important}.tile--info{background-color:#103c48!important}.tile--info__expand{background-color:#2d5b69!important}.tile--c{background-color:#2d5b69!important;color:#ccdadb!important}.module__text{color:#adbcbc!important}.about-info-box__heading{color:#cad8d9!important}.result.highlight{background-color:#184956!important}.result__snippet{color:#adbcbc!important}.result__snippet b{color:#cad8d9!important}.btn--top{background-color:#184956!important;color:#adbcbc!important}.btn--top:hover{background-color:#2d5b69!important}.result--sep--hr:before{background-color:#2d5b69!important}"));
+        document.getElementsByTagName("head")[0].appendChild(css)
+    };
+ 
+    // instantiate and run 
+    var main = new main();
+})();
+

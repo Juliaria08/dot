@@ -1,0 +1,27 @@
+// ==UserScript==
+// @name            Selenized for duckduckgo.com
+// @author          lovetocode999
+// @namespace       https://lovetocode999.github.io/
+// @description     Selenized for duckduckgo.com
+// @license         MIT License
+// @version	        0.1
+// @include         /^https?:\/\/.*reddit\.com\/.*/
+// @released        YYYY-MM-DD
+// @updated         YYYY-MM-DD
+// @compatible      Greasemonkey
+// @run-at          document-end
+// ==/UserScript==
+ 
+(function(){
+ 
+    function main(){
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.appendChild(document.createTextNode("*{border-color:#72898f!important}a{color:#4695f7!important}a:visited{color:#af88eb!important}body{background-color:#103c48!important;color:#adbcbc!important}html{background-color:#103c48!important}input,textarea{background-color:#184956!important;color:#adbcbc!important}blockquote,pre{background-color:#184956!important;color:#adbcbc!important}#sr-header-area{background-color:#184956!important}#sr-header-area .srdrop .selected{color:#adbcbc!important}#sr-header-area #sr-more-link{background-color:#184956!important}.link.promotedlink.promoted{background-color:#184956!important}.link .usertext .md{background-color:#184956!important}.linkinfo{background-color:#184956!important}.linklisting .odd{background-color:#184956!important}.thing .title{color:#adbcbc!important}div.md{color:#adbcbc!important}body.comment{background-color:#103c48!important}.commentarea>.usertext{background-color:#103c48!important}.commentarea .menuarea{background-color:#103c48!important}.comments-page .panestack-title{background-color:#103c48!important}.listing-chooser{background-color:#103c48!important}.listing-chooser .intro{background-color:#2d5b69!important;color:#cad8d9!important}.listing-chooser .grippy{background-color:#103c48!important}.listing-chooser .grippy:after{border-right:none!important}.listing-chooser li{background-color:#184956!important}.listing-chooser li.selected{background-color:#2d5b69!important;box-shadow:none}.listing-chooser li a{color:#adbcbc!important}.listing-chooser li a .description{color:#cad8d9!important}.titlebox{background-color:#184956!important}.titlebox form.toggle{background-color:#184956!important;color:#adbcbc!important}.side .usertext-body .md{background-color:#184956!important}.side{background-color:#184956!important}.sidebox .spacer{background-color:#184956!important;color:#cad8d9!important}.tabmenu li a{background-color:#184956!important}#header-bottom-right{background-color:#184956!important}.morelink .nub{background-color:#184956!important}"));
+        document.getElementsByTagName("head")[0].appendChild(css)
+    };
+ 
+    // instantiate and run 
+    var main = new main();
+})();
+

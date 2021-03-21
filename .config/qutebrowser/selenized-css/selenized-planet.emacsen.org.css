@@ -1,0 +1,61 @@
+* {
+  border-color: #72898f !important;
+}
+a {
+  color: #4695f7 !important;
+}
+a:visited {
+  color: #af88eb !important;
+}
+body {
+  background-color: #103c48 !important;
+  color: #adbcbc !important;
+}
+html {
+  background-color: #103c48 !important;
+}
+input,
+textarea {
+  background-color: #184956 !important;
+  color: #adbcbc !important;
+}
+blockquote,
+pre {
+  background-color: #184956 !important;
+  color: #adbcbc !important;
+}
+div#page div#header {
+  background-color: #103c48 !important;
+}
+div#page div#header a {
+  color: #af88eb !important;
+}
+.post {
+  background-color: #103c48 !important;
+}
+.post * {
+  overflow: auto !important;
+}
+.post h2 {
+  background-color: #184956 !important;
+}
+.post h2 a {
+  color: #cad8d9 !important;
+}
+.post div.entry {
+  background-color: #103c48 !important;
+  color: #adbcbc !important;
+}
+.post div.entry blockquote {
+  background-color: #184956 !important;
+}
+.post div.entry kbd {
+  background-color: #184956 !important;
+  border-color: #72898f !important;
+  box-shadow: none !important;
+  color: #cad8d9 !important;
+  text-shadow: 0px 1px 0px #000 !important;
+}
+.post pre.mode-line {
+  overflow: visible !important;
+}
