@@ -1,0 +1,44 @@
+```
+ __          __  _                          
+ \ \        / / | |                         
+  \ \  /\  / /__| | ___ ___  _ __ ___   ___ 
+   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+    \  /\  /  __/ | (_| (_) | | | | | |  __/
+     \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+```
+
+
+# Quicklinks:
+=> about:bookmarks Bookmarks
+=> gemini://vault.transjovian.org:1965/en Wikipedia
+=> gemini://gemini.circumlunar.space Project Gemini
+
+# Keybindings:
+*         ?: Help
+*        ^[: Leave the help
+*         h: Scroll left
+*         j: Scroll down
+*         k: Scroll up
+*         l: Scroll right
+*         u: Up a page
+*         d: Down a page
+*         g: Top
+*         G: Bottom
+*        \t: Next popup item
+*   <S-Tab>: Previous popup item
+*         b: Back in history
+*         f: Forward in history
+*   <Space>: Open bottom bar
+* <S-[1,9]>: Switch to tab
+*         ): Last tab
+*        ^H: Home
+*        ^T: New tab
+*        ^W: Close tab
+*        ^R: Reload
+*        ^B: Bookmarks
+*        ^D: Bookmark current page
+*        ^S: Download current page
+*         q: Quit
+*        ^C: Force quit
+
+Happy browsing!
