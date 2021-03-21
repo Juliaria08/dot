@@ -49,7 +49,7 @@ max_width = 80
 # An empty value means the code will find the default downloads folder for your system.
 # If the path does not exist it will be created.
 # Note the use of single quotes, so that backslashes will not be escaped.
-downloads = '~/Downloads'
+downloads = 'Downloads'
 
 # Max size for displayable content in bytes - after that size a download window pops up
 page_max_size = 2097152  # 2 MiB
