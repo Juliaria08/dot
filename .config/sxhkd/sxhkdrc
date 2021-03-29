@@ -17,7 +17,7 @@ super + shift + x
 super + d
 	rofi -show drun -show-icons
 super + shift + Return
-	em
+	emacs
 super + r
 	$TERMINAL -e 'lf'
 super + e
