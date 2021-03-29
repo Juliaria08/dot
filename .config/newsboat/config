@@ -37,7 +37,7 @@ macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; ope
 macro v set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler
 macro w set browser "lynx" ; open-in-browser ; set browser linkhandler
 macro p set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
-macro c set browser "xsel -b <<<" ; open-in-browser ; set browser linkhandler
+macro c set browser "echo %u | xsel -b" ; open-in-browser ; set browser linkhandler
 macro C set browser "youtube-viewer --comments=%u" ; open-in-browser ; set browser linkhandler
 
 highlight all "---.*---" yellow
