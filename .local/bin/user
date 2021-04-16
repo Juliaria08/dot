@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo -A -u user -i
+doas -u user bash
