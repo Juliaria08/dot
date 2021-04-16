@@ -196,6 +196,8 @@ super + {_,shift + }c
 super + {_,shift + } {1-9}
 	crystal {--focus,--send} ^{1-9}
 
+super + alt + {1-9}
+	bspc monitor -f ^{1-9}
 
 super + {_,shift + } 0
 	crystal {--focus,--send} R00t
