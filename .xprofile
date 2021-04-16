@@ -7,6 +7,10 @@
 # Add this when you include flatpak in your system
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+       eval `dbus-launch --sh-syntax --exit-with-session`
+fi
+
 # Power Saving Stuff on
 xset dpms &
 xset s on &
@@ -24,9 +28,9 @@ syncthing & # Launch syncthing
 launch_polybar &
 keynav &
 
-# This line autostarts an instance of Pulseaudio that does not exit on idle.
+# This line autostarts an instance of pipewire that does not exit on idle.
 # This is "necessary" on Artix due to a current bug between PA and
 # Chromium-based browsers where they fail to start PA and use dummy output.
 pidof -s runit &&
-	pidof -s ! pidof -s pulseaudio >/dev/null 2>&1 &&
-	setsid -f pulseaudio --start --exit-idle-time=-1 >/dev/null 2>&1
+	pidof -s ! pidof -s pipewire >/dev/null 2>&1 &&
+	setsid -f pipewire >/dev/null 2>&1
