@@ -27,6 +27,7 @@ syncthing & # Launch syncthing
 # lang es & # Set language to es
 launch_polybar &
 keynav &
+snapserver &
 
 # This line autostarts an instance of pipewire that does not exit on idle.
 # This is "necessary" on Artix due to a current bug between PA and
