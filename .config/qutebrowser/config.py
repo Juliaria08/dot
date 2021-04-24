@@ -209,7 +209,7 @@ def load_settings():
         c.content.media.audio_video_capture = True
 
         # Websites have to ask to show notifications
-        c.content.notifications = "ask"
+        c.content.notifications.enabled = "ask"
 
         # Don't allow Flash (HTML5 FTW!!!)
         c.content.plugins = False
@@ -218,7 +218,7 @@ def load_settings():
         c.content.register_protocol_handler = "ask"
 
         # Always use SSL
-        c.content.ssl_strict = True
+        #c.content.ssl_strict = True # Does not exist
 
         # User agent
         c.content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; \
@@ -226,23 +226,23 @@ def load_settings():
             Safari/537.36"
 
         # Set host blocking lists
-        c.content.blocking.hosts.lists = [
-            "https://easylist.to/easylist/easylist.txt",
-            "https://easylist.to/easylist/easyprivacy.txt",
-            "https://easylist.to/easylist/fanboy-annoyance.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/filters.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/annoyances.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/badware.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/privacy.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/resource-abuse.txt",
-            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
-filters/unbreak.txt",
-            "https://www.malwaredomainlist.com/hostslist/hosts.txt"]
+        #c.content.blocking.hosts.lists = [
+            #"https://easylist.to/easylist/easylist.txt",
+            #"https://easylist.to/easylist/easyprivacy.txt",
+            #"https://easylist.to/easylist/fanboy-annoyance.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/filters.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/annoyances.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/badware.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/privacy.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/resource-abuse.txt",
+            #"https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/\
+#filters/unbreak.txt",
+            #"https://www.malwaredomainlist.com/hostslist/hosts.txt"]
 
     def settings_hints():
         # Hint chars
