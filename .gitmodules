@@ -1,0 +1,6 @@
+[submodule ".config/kitty/kitty-themes/kitty-alternative-themes"]
+	path = .config/kitty/kitty-themes/kitty-alternative-themes
+	url = https://github.com/dexpota/kitty-themes/
+[submodule ".config/kitty/kitty-alternative-themes"]
+	path = .config/kitty/kitty-alternative-themes
+	url = https://github.com/dexpota/kitty-themes/
