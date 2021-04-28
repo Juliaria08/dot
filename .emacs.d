@@ -1,1 +1,0 @@
-/home/julian/git/personal/projs/emacs/.emacs.d/
