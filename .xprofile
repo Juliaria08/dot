@@ -34,4 +34,4 @@ snapserver &
 # Chromium-based browsers where they fail to start PA and use dummy output.
 pidof -s runit &&
 	pidof -s ! pidof -s pipewire >/dev/null 2>&1 &&
-	setsid -f pipewire >/dev/null 2>&1
+	setsid -f pipewire >/dev/null 2>&1 &
