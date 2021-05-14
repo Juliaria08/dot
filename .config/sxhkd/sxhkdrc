@@ -33,7 +33,7 @@ super + n
 super + shift + F4
 	$TERMINAL -e pulsemixer
 super + shift + e
-	$TERMINAL -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook
+	rofi-pass
 super + w
 	$BROWSER
 super + alt + w
