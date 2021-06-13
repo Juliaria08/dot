@@ -14,6 +14,7 @@ fi
 # Power Saving Stuff on
 xset dpms &
 xset s on &
+xsetroot -cursor_name left_ptr &
 
 mpd &			# music player daemon-you might prefer it as a service though
 remaps &		# run the remaps script, switching caps/esc and more; check it for more infox
