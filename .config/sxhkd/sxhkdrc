@@ -16,8 +16,6 @@ super + shift + x
 	launcher
 super + d
 	rofi -show drun -show-icons
-super + shift + Return
-	emacs
 super + r
 	$TERMINAL -e 'lf'
 super + e
