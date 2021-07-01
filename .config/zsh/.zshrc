@@ -67,7 +67,7 @@ lfcd () {
 }
 
 cd_with_fzf() {
-	cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && echo "$PWD" && tree -L 1
+	cd $HOME && cd "$(fd -t d | fzf --preview="exa -T -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)" && echo "$PWD" && exa -T -L 1
 }
 
 bindkey -s '^o' 'lfcd\n'
