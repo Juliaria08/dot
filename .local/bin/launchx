@@ -1,0 +1,10 @@
+#!/bin/sh
+
+startx
+
+CHOICE="$(printf 'Shutdown\nLogout' | fzf)"
+
+case $CHOICE in
+	"Shutdown") exec sudo /bin/shutdown -h now;;
+	"Logout") exit;;
+esac
