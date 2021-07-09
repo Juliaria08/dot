@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-yay -Sy
-randomwp
-mw -Y
