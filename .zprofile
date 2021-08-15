@@ -13,7 +13,7 @@ export PATH="/home/julian/Documents/config/bin:$PATH:$(du "$HOME/.local/bin" | c
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="kitty"
-export BROWSER="brave"
+export BROWSER="firefox"
 export READER="zathura"
 export TERM="xterm-256color"
 
