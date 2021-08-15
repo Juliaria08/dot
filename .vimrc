@@ -96,6 +96,26 @@ nnoremap <silent> ; :set invhlsearch<CR>
 vmap < <gv
 vmap > >gv
 
+" Execute the current line with BASH.
+noremap <silent> <leader>rl :.w !bash<CR>
+
+" Move the current line up or down.
+noremap <silent> <C-l> :move -2<CR>
+noremap <silent> <C-k> :move +1<CR>
+
+" Run the current file with PERL, Python, BASH, or a Bourne Shell derivative.
+noremap <silent> <leader>rpl :!perl %<CR>
+noremap <silent> <leader>rpy :!python %<CR>
+noremap <silent> <leader>rb :!bash %<CR>
+noremap <silent> <leader>rs :!sh %<CR>
+
+" Autocorrect 'teh' to 'the'.
+ab teh the
+
+" Save with 'root' access, using sudo(8) and tee(1), for when I forget.
+if executable('/usr/bin/sudo') && executable('/usr/bin/tee')
+	noremap <silent> <leader>sudosave :w !/usr/bin/sudo /usr/bin/tee %<CR>
+endif
 " }}}
 
 function! MyStatusLine()
