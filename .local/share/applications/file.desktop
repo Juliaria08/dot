@@ -2,4 +2,4 @@
 Type=Application
 Icon=/home/julian/.local/share/icons/candy-icons/apps/scalable/file-manager.svg
 Name=File Manager
-Exec=/usr/local/bin/st -e lf %u
+Exec=/bin/kitty -e lf %u
