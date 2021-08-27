@@ -2,7 +2,7 @@
 
 cat <<EOF | xmenu | sh &
 Terminal	kitty
-Web Browser	brave
+Web Browser	firefox
 Calendar	kitty -e 'calcurse'
 
 Productivity
