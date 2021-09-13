@@ -85,8 +85,11 @@ bindkey '^e' edit-command-line
 
 
 # Nvm
-export NVM_DIR="$HOME/.local/share/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+Load_NVM () {
+	export NVM_DIR="$HOME/.local/share/nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+}
+### Load_NVM
 
 . /usr/share/fzf/key-bindings.zsh
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
