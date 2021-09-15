@@ -26,8 +26,8 @@ call plug#end()
 " Color
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
-let g:limelight_conceal_guifg = 'DarkGray'
-let g:limelight_conceal_guifg = '#777777'
+"let g:limelight_conceal_guifg = 'DarkGray'
+let g:limelight_conceal_guifg = '#577777'
 " End of Color
 set bg=light
 set go=a

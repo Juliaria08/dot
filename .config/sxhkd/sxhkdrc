@@ -12,8 +12,6 @@ super + Return
 	$TERMINAL
 super + ctrl + Return
 	xmenu.sh
-super + shift + x
-	launcher
 super + d
 	rofi -show drun -show-icons
 super + r
