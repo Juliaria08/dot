@@ -252,7 +252,7 @@ super + alt + p
 
 # Smart resize, will grow or shrink depending on location.
 # Will always grow for floating nodes.
-alt + {h,j,k,l}
+super + alt + {h,j,k,l}
   n=10; \
   { d1=left;   d2=right;  dx=-$n; dy=0;   \
   , d1=bottom; d2=top;    dx=0;   dy=$n;  \
