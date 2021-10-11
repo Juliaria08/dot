@@ -25,10 +25,6 @@ map <leader>p :!opout <c-r>%<CR><CR>
 " Check file in shellcheck:
 map <leader>s :!clear && shellcheck %<CR>
 
-" Open my bibliography file in split
-map <leader>b :vsp<space>$BIB<CR>
-map <leader>r :vsp<space>$REFER<CR>
-
 " Replace all is aliased to S.
 nnoremap S :%s//g<Left><Left>
 
@@ -108,6 +104,9 @@ noremap <silent> <leader>rpl :!perl %<CR>
 noremap <silent> <leader>rpy :!python %<CR>
 noremap <silent> <leader>rb :!bash %<CR>
 noremap <silent> <leader>rs :!sh %<CR>
+
+" Date
+noremap <silent> <leader>dt :r!date +\%d-\%m-\%Y\ \%H:\%M<CR>
 
 " Autocorrect 'teh' to 'the'.
 ab teh the
